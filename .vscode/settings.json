@@ -1,3 +1,15 @@
 {
-    "git.ignoreLimitWarning": true
+    "files.associations": {
+        "filesystem": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp",
+        "array": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
+    }
 }

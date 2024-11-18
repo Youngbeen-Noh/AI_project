@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CUDA with OpenCV",
+            "type": "shell",
+            "command": "nvcc",
+            "args": [
+                "-std=c++17",
+                "${file}",
+                "-o",
+                "${fileDirname}/build/${fileBasenameNoExtension}.exe",
+                "-ccbin", "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64",
+                "-I", "C:/opencv/build/include",
+                "-L", "C:/opencv/build/x64/vc16/lib",
+                "-lopencv_world4100",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
